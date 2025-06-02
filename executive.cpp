@@ -7,6 +7,13 @@
 
 #include "executive.h"
 
+/***************************************************
+ * Progetto di Sistemi Operativi in Tempo Reale
+ * Autore: Samuele Roberto Napolitano
+ * Matricola: 378454
+ * Anno Accademico: 2024/2025
+ ***************************************************/
+
 Executive::Executive(size_t num_tasks, unsigned int frame_length, unsigned int unit_duration)
 	: p_tasks(num_tasks), frame_length(frame_length), unit_time(unit_duration)
 {

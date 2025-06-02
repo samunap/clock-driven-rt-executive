@@ -11,6 +11,13 @@
 #include "rt/priority.h"
 #include "rt/affinity.h"
 
+/***************************************************
+ * Progetto di Sistemi Operativi in Tempo Reale
+ * Autore: Samuele Roberto Napolitano
+ * Matricola: 378454
+ * Anno Accademico: 2024/2025
+ ***************************************************/
+
 class Executive
 {
 	public:
