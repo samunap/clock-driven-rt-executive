@@ -1,0 +1,8 @@
+*.o
+*.a
+*.so
+*.out
+build/
+*~
+.DS_Store
+EOF
