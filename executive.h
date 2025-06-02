@@ -53,23 +53,23 @@ class Executive
 			bool completed = false;
 			bool stop = false;
 
-			unsigned int wcet;
+			unsigned int wcet = 0;
 
 		};
 		
-		std::vector<task_data> p_tasks;
+		std::vector<task_data> p_tasks; // vettore dei task periodici
 		
-		std::thread exec_thread;
+		std::thread exec_thread; // thread dell'executive
 		
-		std::vector< std::vector<size_t> > frames;
+		std::vector< std::vector<size_t> > frames; // schedule dei frame
 		
 		const unsigned int frame_length; // lunghezza del frame (in quanti temporali)
 		const std::chrono::milliseconds unit_time; // durata dell'unita di tempo (quanto temporale)
 		
-		/* ... */
-		
+		// Funzione statica eseguita da ogni thread task
 		static void task_function(task_data & task);
 		
+		// Funzione principale dell'executive
 		void exec_function();
 };
 
